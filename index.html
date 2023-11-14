@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
+    <script src="js/main.js" type="module"></script>
     <title>To Do List</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
 
         <section class="listContainer">
             <div class="listTitle">
-                <h1>To Do List</h1>
+                <h1 tabindex="0">To Do List</h1>
                 <button id="clearItems" class="button" title="clear the list" aria-label="remove all items from the list" tabindex="0">Clear</button>
             </div>
             <hr />
@@ -37,6 +38,7 @@
                     <label for="2">sleep</label>
                 </div>
             </div>
+            <p id="confirmation" class="confirmation" aria-live="assertive"></p>
         </section>
     </main>
 </body>
